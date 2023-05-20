@@ -1,0 +1,144 @@
+body {
+    background: lightgray;
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 1.25rem;
+    color: #222;
+    overflow: hidden;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+img {
+    max-width: 300px;
+    border: 10px solid #fff;
+    border-radius: 2px;
+    display: block;
+    /* visibility: hidden; */
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0 0 0;
+    /* background: gray; */
+}
+
+main {
+    width: 750px;
+    height: 500px;
+    position: relative;
+    /* border: 1px dashed gray; */
+    margin: auto;
+}
+
+.one {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    /* transform: translate(-50%, -50%); */
+    transform: rotate(8deg);
+    transition: transform 1s;
+}
+
+.two {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(-15deg);
+    max-width: 200px;
+    transition: transform 1s;
+}
+
+.three {
+    position: absolute;
+    top: 250px;
+    transform: rotate(-15deg);
+    transition: transform 1s;
+}
+
+.four {
+    position: absolute;
+    max-width: 200px;
+    top: 220px;
+    right: 0;
+    transform: rotate(20deg);
+    transition: transform 1s;
+}
+
+.five {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%) rotate(5deg);
+    /* z-index: 5; */
+    transition: transform 1s;
+}
+
+#active-img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+    max-width: 800px;
+    max-height: 400px;
+    transition: transform 1s;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    margin: 0;
+    padding: 2px 0;
+    margin: 0 10px;
+    /* transition: border 0.3s; */
+}
+
+footer a:hover {
+    border-bottom: 1px solid #222;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s;
+}
+
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 6;
+}
+
+/* #overlay p {
+    width: 200px;
+    color: black;
+} */
+
+/* .close {
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    transform: translate(-50%, -50%);
+} */
+

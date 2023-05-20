@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wk2 - JS Experimentation - Functions & DOM</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        div {
+            border: 1px solid black;
+            width: 500px;
+            margin: auto;
+            padding: 10px 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>About Me</h1>
+    </div>
+    
+
+    <script>
+        // prints a sentence that includes your name and asks for one of your favorite things (randomly chosen from array)
+        
+        var wrapper = document.querySelector('div');
+        var favorite = ["food", "place", "color", "activity"];
+        var name = prompt("What's your name?", "");
+
+        function favQuestion(array) {
+            var index = randomNum(0, array.length-1);
+            var answer = prompt(`What's your favorite ${array[index]}?`);
+
+            var paragraph = document.createElement('p');
+            wrapper.append(paragraph);
+
+            paragraph.append(`Hi, I'm ${name}, and my favorite ${array[index]} is ${answer}.`);
+        }
+
+        function randomNum(min, max) {
+            return Math.floor( (max-min+1) * Math.random() + min)
+        }
+        
+        favQuestion(favorite);
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    line-height: 1.6;
+    background: #000;
+    color: #0abdc6;
+}
+
+a {
+    color: rgb(202, 202, 139);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: rgb(255, 255, 185);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    margin: 0;
+}
+
+h2 {
+    color: rgb(255, 106, 106);
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+figure {
+    margin: 25px 0;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+hr {
+    margin: 40px 0;
+}
+
+#container {
+    max-width: 525px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+header a {
+    font-size: 50px;
+    padding: 50px 0;
+    display: block;
+    color: rgb(255, 106, 106);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 106, 106);
+}
+
+
+nav {
+    border-top: 2px solid #0abdc6;
+    border-bottom: 2px solid #0abdc6;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul a {
+    color: #0abdc6;
+    text-transform: uppercase;
+    display: block;
+    padding: 5px 15px;
+}
+
+nav ul a:hover {
+    color:  #2de3ec;
+}
+
+
+main, .post {
+    padding: 40px 0;
+}
+
+article {
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto 25px auto;
+    border: 2px solid #0abdc6;
+    color: #0abdc6;
+    transition: box-shadow 0.3s;
+}
+
+main article:hover {
+    box-shadow: 0 0 6px #0abdc6;;
+}
+
+article h2:after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    border-bottom: 2px solid rgb(202, 202, 139);
+    width: 2ch;
+}
+
+article a {
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s;
+}
+
+article a:hover {
+    border-color:rgb(202, 202, 139);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+footer a {
+    padding: 5px 20px;
+    border-right: 2px solid rgb(202, 202, 139);
+    display: block;
+
+}
+
+footer a:last-of-type {
+    border: none;
+}
+
+
+@media only screen and (max-width: 520px) {
+    #container {
+        width: 100%;
+    }
+}

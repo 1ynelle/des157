@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Picture - Lynelle Chen</title>
+
+    <!-- Normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body id="macau">
+    <div class="wrapper">
+        <section class="pics">
+            <!-- buttons -->
+            <div class="open" id="one">
+                <img src="images/macau/img1.jpg" alt="porcelain house">
+            </div>
+
+            <div class="open" id="two">
+                <img src="images/macau/img2.jpg" alt="hainan building">
+            </div>
+
+            <div class="open" id="three">
+                <img src="images/macau/img3.jpg" alt="macau tower">
+            </div>
+
+            <div class="open" id="four">
+                <img src="images/macau/img4.jpg" alt="great wall">
+            </div>
+
+            <div class="open" id="five">
+                <img src="images/macau/img5.jpg" alt="macau boats">
+            </div>
+        </section>
+
+        <section class="desc">
+            <article>
+                <h2>Macau 2019</h2>
+                <p><a href="https://www.travelandleisure.com/travel-guide/macao">Macau</a> travel provides wonderful opportunities to see the region’s mixed Chinese and Portuguese heritage. Those who visit Macau will enjoy the rich local culture, unique natural surroundings and exciting nightlife, which is dominated by the presence of dozens of casinos.</p>
+
+                <nav>
+                    <ul>
+                        <li><a href="tianjin.html">&#60;&#8211; Tianjin</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="beijing.html">Beijing &#8211;&#062;</a></li>
+                    </ul>
+                </nav>
+            </article>
+        </section>
+
+        <!-- overlay content -->
+        <div class="modal hidden" id="ol-one">
+            <img src="images/macau/img1.jpg" alt="porcelain house">
+            <h2>Macau Tower</h2>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque repellat sequi adipisci, ipsum ipsam architecto expedita non magni odio rem.</p> -->
+            <button class="close">&otimes;</button>
+        </div>
+
+        <div class="modal hidden" id="ol-two">
+            <img src="images/macau/img2.jpg" alt="hainan building">
+            <h2>Venetian Macau</h2>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque repellat sequi adipisci, ipsum ipsam architecto expedita non magni odio rem.</p> -->
+            <button class="close">&otimes;</button>
+        </div>
+
+        <div class="modal hidden" id="ol-three">
+            <img src="images/macau/img3.jpg" alt="macau tower">
+            <h2>Senado Square</h2>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque repellat sequi adipisci, ipsum ipsam architecto expedita non magni odio rem.</p> -->
+            <button class="close">&otimes;</button>
+        </div>
+
+        <div class="modal hidden" id="ol-four">
+            <img src="images/macau/img4.jpg" alt="great wall">
+            <h2>Almond Cookies</h2>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque repellat sequi adipisci, ipsum ipsam architecto expedita non magni odio rem.</p> -->
+            <button class="close">&otimes;</button>
+        </div>
+
+        <div class="modal hidden" id="ol-five">
+            <img src="images/macau/img5.jpg" alt="macau boats">
+            <h2>Portuguese Egg Tarts</h2>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque repellat sequi adipisci, ipsum ipsam architecto expedita non magni odio rem.</p> -->
+            <button class="close">&otimes;</button>
+        </div>
+    </div>
+    <!-- end wrapper -->
+
+    <div class="overlay hidden"></div>
+        
+    <footer>
+        <a href="mailto:&#108;&#101;&#121;&#099;&#104;&#101;&#110;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Lynelle Chen</a>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+</body>
+</html>

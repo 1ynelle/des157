@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Picture - Lynelle Chen</title>
+
+    <!-- Normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>China 2019</h1>
+    </header>
+    
+    <main>
+        <!-- buttons -->
+        <div class="open" id="one">
+            <img src="images/img1.jpg" alt="porcelain house">
+        </div>
+
+        <div class="open" id="two">
+            <img src="images/img2.jpg" alt="hainan building">
+        </div>
+
+        <div class="open" id="three">
+            <img src="images/img3.jpg" alt="macau tower">
+        </div>
+
+        <div class="open" id="four">
+            <img src="images/img4.jpg" alt="great wall">
+        </div>
+
+        <div class="open" id="five">
+            <img src="images/img5.jpg" alt="beijing boats">
+        </div>
+
+
+        <!-- overlay content -->
+        <div class="modal hidden" id="ol-one">
+            <img src="images/img1.jpg" alt="porcelain house">
+            <h2>Tianjin - Porcelain House</h2>
+            <p>A french building embellished with over 700 million porcelain pieces, 4,000 of which are Chinese vases</p>
+            <button class="close">&otimes;</button>
+        </div>
+
+        <div class="modal hidden" id="ol-two">
+            <img src="images/img2.jpg" alt="hainan building">
+            <h2>Hainan - Qilou Old Street</h2>
+            <p>The oldest building on Qilou dates back 600 years to the Southern Song Dynasty.</p>
+            <button class="close">&otimes;</button>
+        </div>
+
+        <div class="modal hidden" id="ol-three">
+            <img src="images/img3.jpg" alt="macau tower">
+            <h2>Macau - Macau Tower</h2>
+            <p>Amazing views, restarants, shopping... and bungee jumping!</p>
+            <button class="close">&otimes;</button>
+        </div>
+
+        <div class="modal hidden" id="ol-four">
+            <img src="images/img4.jpg" alt="great wall">
+            <h2>Beijing - Great Wall</h2>
+            <p>The entire wall measures 13,171 miles long + the hike is worth it when you get to slide back down.</p>
+            <button class="close">&otimes;</button>
+        </div>
+
+        <div class="modal hidden" id="ol-five">
+            <img src="images/img5.jpg" alt="beijing boats">
+            <h2>Beijing - Houhai Lake</h2>
+            <p>A calm boat ride surrounded by willows. It's said that the lake is connected with the "dragon vein" (invisible but important to bringing peace and prosperity) of the Forbidden City</p>
+            <button class="close">&otimes;</button>
+        </div>
+    </main>
+
+    <div class="overlay hidden"></div>
+        
+    <footer>
+        <a href="mailto:&#108;&#101;&#121;&#099;&#104;&#101;&#110;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Lynelle Chen</a>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+</body>
+</html>

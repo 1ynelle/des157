@@ -1,0 +1,168 @@
+body {
+    background: lightgray;
+    font-family: 'Nanum Pen Script', sans-serif;
+    font-size: 1.25rem;
+    color: #222;
+    overflow: hidden;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+main {
+    width: 750px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+}
+
+.hidden {
+    opacity: 0;
+    transform: scale(0);
+    pointer-events: none;
+}
+
+
+/* Clickable Images ---------- */
+.open {
+    background: white;
+    padding: 10px;
+    border-radius: 2px;
+    transform: scale(1);
+    transition: opacity 0.5s, box-shadow 0.3s;
+}
+
+.open:hover {
+    box-shadow: 0 0 10px rgb(145, 145, 145);
+}
+
+#one {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transform: rotate(8deg);
+    max-width: 300px;
+}
+
+#two {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(-15deg);
+    max-width: 200px;
+}
+
+#three {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    transform: rotate(-15deg);
+    max-width: 300px;
+}
+
+#four {
+    position: absolute;
+    top: 220px;
+    right: 0;
+    transform: rotate(20deg);
+    max-width: 200px;
+}
+
+#five {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%) rotate(5deg);
+    max-width: 300px;
+}
+
+
+/* Image Overlay ---------- */
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    max-width: 800px;
+
+    padding: 10px;
+    background: white;
+    border-radius: 2px;
+    z-index: 10;
+    transition: opacity 0.5s;
+}
+
+.modal h2 {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.modal p {
+    position: absolute;
+    top: 40%;
+    transform: translate(0, -50%);
+    left: -230px;
+    width: 200px;
+    background: white;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+
+/* Footer ---------- */
+footer {
+    text-align: center;
+}
+
+footer a {
+    padding: 2px 0;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    border-bottom: 1px solid #222;
+}
+
+/* dimmed bg */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: all;
+    transition: opacity 0.5s;
+}
+
+/* close image overlay button */
+.close {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    top: -1.3rem;
+    right: -1rem;
+    border-radius: 100%;
+}
