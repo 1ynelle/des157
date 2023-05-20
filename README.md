@@ -1,4 +1,4 @@
-# 📚 Portal Page | Interactive Media II
+# 🏠 Portal Page | Interactive Media II
 
 Collection of assignments for [UC Davis' DES157A Course](https://arts.ucdavis.edu/course-description/des-157a-interactive-media-ii-4)
 
